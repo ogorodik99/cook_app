@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Заголовок -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Рецепты для готовки"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"/>
+
+    <!-- Список рецептов -->
+    <ListView
+        android:id="@+id/listViewRecipes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>
+
+    <!-- Кнопка добавления нового рецепта -->
+    <Button
+        android:id="@+id/buttonAddRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить рецепт"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/listViewRecipes"
+        android:marginTop="16dp"/>
+
+</RelativeLayout>
